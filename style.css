@@ -363,7 +363,7 @@ ul {
 }
 
 #portfolio {
-  background-image: url(Images/nightydesert.jpg);
+  background-image: url(images/nightydesert.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -432,7 +432,7 @@ ul {
   text-align: center;
   min-height: 65dvh;
   padding: 30px;
-  background-image: url(Images/cloudyday.jpg);
+  background-image: url(images/cloudyday.jpg);
   background-position: center right;
   background-size: cover;
 }
@@ -768,4 +768,11 @@ li{
   .about{
     font-size: 20px;
   }
+}
+
+.block{
+  display: block;
+}
+.none{
+  display: none;
 }
