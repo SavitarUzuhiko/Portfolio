@@ -651,6 +651,9 @@ li{
   .box:hover .project{
   transform: translateY(-98%);
   }
+  .linkup:hover .arrow-up {
+    transform: translateY(0);
+  }
 }
 @media (max-width:850px){
   .ul{
