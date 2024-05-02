@@ -11,12 +11,12 @@
 <body>
     <!-- https://github.com/Savitarn1/Portfolio.git  -->
     <a href="#header" class="linkup">
-        <p class="arup"><i class="fa-solid fa-arrow-up"></i></p>
-        <p class="arup"><i class="fa-solid fa-arrow-up"></i></p>
+        <p class="arrow-up"><i class="fa-solid fa-arrow-up"></i></p>
+        <p class="arrow-up"><i class="fa-solid fa-arrow-up"></i></p>
     </a>
     <section id="header" class="backwhite">
         <nav class="navbar">
-            <img src="images/Dc.png"  alt="DC" class="logo">
+            <img src="images/logo.png"  alt="DC" class="logo">
             <ul class="ul">
                 <li class="li"><a href="#about" class="link">About me</a></li>
                 <li class="li"><a href="#about" class="link">Skills</a></li>
@@ -30,8 +30,22 @@
                     </div>
                 </button>
             </ul>
+            <ul class="sidebar">
+                <button class="day">
+                    <div class="c1">
+                        <i class="icon fa-regular fa-sun"></i>
+                        <i class="icon fa-regular fa-moon noim"></i>
+                    </div>
+                </button>
+                <li class="li"><a href="#about" class="link">About me</a></li>
+                <li class="li"><a href="#about" class="link">Skills</a></li>
+                <li class="li"><a href="#portfolio" class="link">Portfolio</a></li>
+                <li class="li"><a href="#resume" class="link">Resume</a></li>
+                <li class="li"><a href="#contacts" class="link">Contacts</a></li>
+                <li onclick=hideSidebar() class="x"><i class="fa-solid fa-x"></i></li>
+            </ul>
             <span class="bar">
-                <i class="fa-solid fa-bars"></i>
+                <i  onclick=showSidebar() class="fa-solid fa-bars"></i>
             </span>
         </nav>
         <h1 class="h1">Frontend Developer</h1>
@@ -49,8 +63,8 @@
         </section>
         <section class="cards" id="Skills">
             <div class="card">
-                <div>
-                    <i class="fa-solid fa-laptop-code"></i>
+                <div class="">
+                    <i class="skill-icon fa-solid fa-laptop-code"></i>
                 </div>
                 <h3 class="h3">Front-End / Back-End Development</h3>
                 <p class="attractive">I am highly interested in working on front-end and creating really attractive pages.</p>
@@ -85,7 +99,7 @@
             </div>
             <div class="card">
                 <div>
-                    <i class="fa-solid fa-laptop-code"></i>
+                    <i class="skill-icon fa-solid fa-laptop-code"></i>
                 </div>
                 <h3 class="h3">Learner</h3>
                 <p class="attractive">I always want to learn what I need to know and try to practice. Knowledge is power. </p>
@@ -120,7 +134,7 @@
             </div>
             <div class="card">
                 <div>
-                    <i class="fa-solid fa-language"></i>
+                    <i class="skill-icon fa-solid fa-language"></i>
                 </div>
                 <h3 class="h3">Languages</h3>
                 <p class="attractive">I am good at foreign languages, they are very interesting and important in my opinion</p>
@@ -166,8 +180,10 @@
         <div class="boxs">
             <div class="box">
                 <div class="texts">
-                    <p class="large">Artemis Platform</p>
-                    <p class="about">Artemis is a HEMIS-based project designed to assess university students.</p>
+                    <div class="project">
+                        <p class="large">Artemis Platform</p>
+                        <p class="about">Artemis is a HEMIS-based project designed to assess university students.</p>
+                    </div>
                     <ul class="ul2">
                         <p class="li2 large">What I used:</p>
                         <li class="li2">HTML</li>
@@ -180,9 +196,11 @@
             </div>
             <div class="box">
                 <div class="texts">
-                    <p class="large">Demo Youtube</p>
-                    <p class="about">I chose the YOUTUBE platform for this purpose and prepared its web page.
+                    <div class="project">
+                        <p class="large">Demo Youtube</p>
+                        <p class="about">I chose the YOUTUBE platform for this purpose and prepared its web page.
                     </p>
+                    </div>
                     <ul class="ul2">
                         <p class="li2 large">What I used:</p>
                         <li class="li2">HTML</li>
@@ -195,8 +213,10 @@
             </div>
             <div class="box">
                 <div class="texts">
-                    <p class="large">Positivus</p>
-                    <p class="about little">Custom made website on Positivus theme</p>
+                    <div class="project">
+                        <p class="large">Positivus</p>
+                    <p class="about little">An animated website specially made on the theme of Positivus</p>
+                    </div>
                     <ul class="ul2">
                         <p class="li2 large">What I used:</p>
                         <li class="li2">HTML</li>
@@ -209,8 +229,10 @@
             </div>
             <div class="box">
                 <div class="texts">
-                    <p class="large">Flowers</p>
+                    <div class="project">
+                        <p class="large">Flowers</p>
                     <p class="about little">A website based on the theme of Figma mockup in flowers</p>
+                    </div>
                     <ul class="ul2">
                         <p class="li2 large">What I used:</p>
                         <li class="li2">HTML</li>
@@ -223,8 +245,10 @@
             </div>
             <div class="box">
                 <div class="texts">
-                    <p class="large">Liverpool</p>
-                    <p class="about little">A web page based on the website of the Liverpool football team</p>
+                    <div class="project">
+                        <p class="large">Liverpool</p>
+                        <p class="about little">A web page based on the website of the Liverpool football team</p>
+                    </div>
                     <ul class="ul2">
                         <p class="li2 large">What I used:</p>
                         <li class="li2">HTML</li>
@@ -237,8 +261,10 @@
             </div>
             <div class="box">
                 <div class="texts">
-                    <p class="large">Sample Portfolio</p>
-                    <p class="about little">I made my current Portfolio web page inspired by this website</p>
+                    <div class="project">
+                        <p class="large">Sample Portfolio</p>
+                        <p class="about little">I made my current Portfolio web page inspired by this website</p>
+                    </div>
                     <ul class="ul2">
                         <p class="li2 large">What I used:</p>
                         <li class="li2">HTML</li>
@@ -265,7 +291,7 @@
     </section>
 
     <section id="contacts">
-        <img src="images/User.png" alt="DC" class="logo logo1">
+        <img src="images/User1.png" alt="User" class="logo1">
         <span class="spn">Learning, practicing, living at a time.</span>
         <div class="lastlink">
             <ul class="linkbox">
