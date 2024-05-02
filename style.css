@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-@import url(responsive.css);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito";
   transition: 0.3s all linear;
+  scroll-behavior: smooth;
 }
 
 span, a, label {
@@ -18,10 +18,13 @@ img {
   height: auto;
   vertical-align: middle;
 }
-
+:root{
+  --cyan:rgb(0, 255, 238);
+  --dodge:dodgerblue;
+}
 .linkup {
   position: fixed;
-  color: dodgerblue;
+  color: var(--dodge);
   bottom: 20px;
   right: 20px;
   font-size: 24px;
@@ -33,13 +36,14 @@ img {
   align-items: center;
   background-color: white;
   overflow: hidden;
+  z-index: 10;
 }
 
-.arup {
+.arrow-up {
   margin: 10px;
 }
 
-.linkup:hover .arup {
+.linkup:hover .arrow-up {
   transform: translateY(-53px);
 }
 
@@ -53,7 +57,7 @@ nav {
 }
 
 .link, .h1, .p {
-  color: dodgerblue;
+  color: var(--dodge);
 }
 
 nav, ul {
@@ -76,9 +80,12 @@ ul {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  box-shadow: -8px 6px 10px black;
+  box-shadow: -5px 5px 10px black;
+  background-color: #e0e0e0;
 }
-
+.logo2{
+  filter: hue-rotate(90deg);
+}
 .h1, .p {
   text-align: center;
 }
@@ -107,14 +114,27 @@ ul {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  
+}
+.user1{
+  padding: 0;
+  box-shadow: 0 0 20px orange;
+}
+.user1:hover{
+  box-shadow: 0 0 25px orange,
+              0 0 35px orange,
+              0 0 50px orange;
 }
 
 .ring {
   border-radius: 50%;
-  width: 331px;
-  height: 330px;
+  width: 335px;
+  height: 335px;
   border: 10px dotted rgb(188, 122, 0);
   animation: around 10s linear infinite;
+}
+.brn{
+  border: none;
 }
 
 @keyframes around1 {
@@ -137,7 +157,7 @@ ul {
   position: absolute;
   height: 3px;
   width: 0;
-  background-color: dodgerblue;
+  background-color: var(--dodge);
   bottom: 0;
   left: 0;
   transition: 0.3s all linear;
@@ -154,7 +174,10 @@ ul {
   border-radius: 20px;
   border: none;
 }
-
+.x{
+  text-align: center;
+  color: var(--dodge);
+}
 .c1 {
   position: relative;
   background-color: #222;
@@ -185,16 +208,17 @@ ul {
   background-color: #222;
 }
 #header, #portfolio {
-  height: 100dvh;
+  min-height: 100dvh;
   padding: 20px;
 }
 .middle{
-  background-color: dodgerblue;
-  height: 100dvh;
+  background-color: var(--dodge);
+  height: 100%;
+  padding: 30px;
 }
 
 .backdodge {
-  background-color: dodgerblue;
+  background-color: var(--dodge);
   color: white;
 }
 
@@ -238,7 +262,7 @@ ul {
 
 .fa-laptop-code, .fa-language {
   font-size: 60px;
-  color: dodgerblue;
+  color: var(--dodge);
 }
 
 .h3, .attractive {
@@ -362,7 +386,7 @@ ul {
 .box {
   width: 30%;
   height: 280px;
-  padding: 20px 40px;
+  padding: 20px 20px;
   text-align: justify;
   color: silver;
   background-color: rgba(0, 0, 0, 0.5);
@@ -384,54 +408,29 @@ ul {
 
 .about {
   font-size: 20px;
-  margin: 65px 0;
 }
 
 .ul2 {
-  padding: 20px;
   display: flex;
   justify-content: center;
 }
-
-.li2 {
-  display: block;
-  width: 100%;
-  font-size: 25px;
+.box:hover .ul2,
+.box:hover .project{
+  transform: translateY(-100%);
 }
-
-.box:hover .texts {
-  transform: translateY(-274px);
+.project{
+  display: grid;
+  place-items: center;
+  height: 250px;
 }
-
-.box:hover {
-  transform: rotateY(45deg);
-  box-shadow: inset 0 0 20px silver, inset 0 0 20px orange, 0 0 40px silver;
+.box:hover{
   transform: scale(1.1);
+  box-shadow: inset 0 0 20px silver, inset 0 0 20px orange, 0 0 40px silver;
 }
-
-.link1 {
-  padding: 10px 15px;
-  background-color: silver;
-  color: black;
-  width: 40%;
-  border-radius: 30px;
-  margin: 10px;
-}
-
-.large {
-  font-size: 40px;
-}
-
-.link1:hover {
-  background-color: dodgerblue;
-  color: white;
-  transform: scale(1.2);
-}
-
 #resume {
   color: black;
   text-align: center;
-  height: 65dvh;
+  min-height: 65dvh;
   padding: 30px;
   background-image: url(images/cloudyday.jpg);
   background-position: center right;
@@ -441,30 +440,48 @@ ul {
 #contacts {
   text-align: center;
   padding: 20px;
-  height: 35dvh;
-  background-color: dodgerblue;
+  min-height: 35dvh;
+  background-color: var(--dodge);
 }
 
 .dot {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-image: radial-gradient(black, dodgerblue);
+  background-image: radial-gradient(black, var(--dodge));
   margin: 10px;
 }
 
 .ul3 {
-  text-align: left;
-  padding: 20px 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
 }
 
 .li2 {
   display: flex;
   align-items: center;
-  font-size: 25px;
-  padding: 10px 0;
+  justify-content: center;
+  font-size: 22px;
+  padding: 5px 0;
+  width: 100%;
 }
-
+.large {
+  font-size: 40px;
+}
+.link1 {
+  padding: 10px 15px;
+  background-color: silver;
+  color: black;
+  width: 40%;
+  border-radius: 30px;
+  margin: 10px;
+}
+.link1:hover {
+  background-color: var(--dodge);
+  color: white;
+  transform: scale(1.2);
+}
 .short-resume {
   font-size: 40px;
 }
@@ -476,18 +493,18 @@ ul {
 
 .resumebtn {
   padding: 8px 15px;
-  border: 1px solid dodgerblue;
+  border: 1px solid var(--dodge);
   border-radius: 8px;
   font-size: 20px;
   color: white;
-  background-color: dodgerblue;
+  background-color: var(--dodge);
 }
 
 .resumebtn:hover {
   transform: scale(1.05);
-  color: dodgerblue;
+  color: var(--dodge);
   background-color: white;
-  box-shadow: 0 3px 7px dodgerblue;
+  box-shadow: 0 3px 7px var(--dodge);
 }
 
 .logo1 {
@@ -523,8 +540,8 @@ ul {
   justify-content: center;
 }
 
-.a:hover {
-  color: dodgerblue;
+.a:hover{
+  color: var(--dodge);
   background-color: #e0e0e0;
 }
 .bar{
@@ -533,28 +550,130 @@ ul {
 .fa-bars{
   font-size: 25px;
 }
+.cyan{
+  color: white;
+  text-shadow: 0 0 10px var(--cyan),
+               0 0 15px var(--cyan),
+               0 0 20px var(--cyan);
+}
+.cyan1{
+  color: var(--cyan);
+}
+.cyan1::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: var(--cyan);
+  bottom: 0;
+  left: 0;
+  transition: 0.3s all linear;
+}
+.sidebar{
+  position: fixed;
+  padding: 20px;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.299);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px );
+}
+.sidebar>li{
+  width: 100%;
+}
+li{
+  padding: 0;
+}
+.dayborder{
+  border: 2px solid black;
+}
 
-
-
+@media(max-width:2500px){
+  .box:hover .ul2,
+  .box:hover .project{
+  transform: translateY(-95%);
+  }
+}
+@media(max-width:1335px){
+  .box{
+    width: 40%;
+  }
+  .boxs{
+    padding: 40px;
+  }
+}
 @media(max-width:1300px){
   .card{
     width: 60%;
   }
+  #about{
+    height: 100%;
+  }
+  .card{
+    margin: 20px;
+    width: 45%;
+  }
   #Skills{
-    height: 100dvh;
-    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .li2{
+    font-size: 20px;
+  }
+  .large{
+    font-size: 40px;
   }
 }
-
-@media (max-width:840px) {
+@media (max-width:1000px){
+  .large{
+    font-size: 38px;
+  }
+  .about{
+    font-size: 18px;
+  }
+  .box:hover .ul2,
+  .box:hover .project{
+  transform: translateY(-95%);
+  }
+}
+@media(max-width:920px){
+  .large{
+    font-size: 32px;
+  }
+  .box:hover .ul2,
+  .box:hover .project{
+  transform: translateY(-98%);
+  }
+}
+@media (max-width:850px){
   .ul{
     display: none;
   }
   .bar{
     display: block;
   }
+  .card , .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+  .large{
+    font-size: 40px;
+  }
+  .about{
+    font-size: 25px;
+  }
+  .dot{
+  display: none;
+  }
 }
-@media (max-width:660px) {
+@media (max-width:670px) {
   .h1{
     font-size: 34px;
     margin-top: 90px;
@@ -586,5 +705,67 @@ ul {
   }
   .backdodge{
     padding: 10px;
+  }
+  #Skills{
+    padding: 0;
+  }
+  .logo1{
+  width: 150px;
+  height: 150px;
+  }
+  .spn{
+    padding: 10px 0;
+  }
+}
+@media(max-width:600px){
+  .large{
+    font-size: 45px;
+  }
+  .about{
+    font-size: 22px;
+  }
+  .boxs{
+    padding: 0;
+  }
+  .linkup{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    bottom: 10px;
+    right: 10px;
+  }
+  .arrow-up{
+    margin: 5px;
+  }
+}
+@media(max-width:515px){
+  .h3{
+    font-size: 16px;
+  }
+  .attractive{
+    font-size: 14px;
+  }
+  #about{
+    padding: 0;
+  }
+  .skill-icon{
+    font-size: 23px;
+  }
+  .experience{
+    padding: 5px 0;
+  }
+  .spn{
+    font-size: 22px;
+  }
+}
+@media(max-width:400px){
+  .middle{
+    padding: 10px;
+  }
+  .large{
+    font-size: 30px;
+  }
+  .about{
+    font-size: 20px;
   }
 }
