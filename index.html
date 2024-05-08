@@ -31,18 +31,21 @@
                 </button>
             </ul>
             <ul class="sidebar">
-                <button class="day">
-                    <div class="c1">
-                        <i class="icon fa-regular fa-sun"></i>
-                        <i class="icon fa-regular fa-moon noim"></i>
-                    </div>
-                </button>
+                <div class="navbox">
+                    <li onclick=hideSidebar() class="x"><i class="fa-solid fa-x"></i></li>
+                    <button class="day day1">
+                        <div class="c1 c2">
+                            <i class="icon fa-regular fa-sun sun"></i>
+                            <i class="icon fa-regular fa-moon moon noim"></i>
+                        </div>
+                    </button>
+                </div>
                 <li class="li"><a href="#about" class="link">About me</a></li>
-                <li class="li"><a href="#about" class="link">Skills</a></li>
+                <li class="li"><a href="#Skills" class="link">Skills</a></li>
                 <li class="li"><a href="#portfolio" class="link">Portfolio</a></li>
                 <li class="li"><a href="#resume" class="link">Resume</a></li>
                 <li class="li"><a href="#contacts" class="link">Contacts</a></li>
-                <li onclick=hideSidebar() class="x"><i class="fa-solid fa-x"></i></li>
+                
             </ul>
             <span class="bar">
                 <i  onclick=showSidebar() class="fa-solid fa-bars"></i>
