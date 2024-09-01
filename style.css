@@ -827,7 +827,26 @@ body{
   .services-container{
     grid-template-columns: repeat(1,1fr);
   }
-
+}
+@media (max-width:650px){
+  .home-img img{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 35px var(--main-color),
+                0 0 45px var(--main-color),
+                0 0 55px var(--main-color),
+                0 0 65px var(--main-color),
+                inset 0 0 5px var(--main-color),
+                inset 0 0 15px var(--main-color),
+                inset 0 0 25px var(--main-color),
+                inset 0 0 35px var(--main-color),
+                inset 0 0 45px var(--main-color),
+                inset 0 0 55px var(--main-color),
+                inset 0 0 65px var(--main-color),
+                inset 0 0 75px var(--main-color),
+                inset 0 0 85px var(--main-color),
+                inset 0 0 95px var(--main-color),
+                inset 0 0 105px var(--main-color);
+  }
 }
 @media (max-width:520px) {
   .service-box{
@@ -857,24 +876,6 @@ body{
   }
   section{
     padding: 3rem 4% 2rem
-  }
-  .home-img img{
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 35px var(--main-color),
-                0 0 45px var(--main-color),
-                0 0 55px var(--main-color),
-                0 0 65px var(--main-color),
-                inset 0 0 5px var(--main-color),
-                inset 0 0 15px var(--main-color),
-                inset 0 0 25px var(--main-color),
-                inset 0 0 35px var(--main-color),
-                inset 0 0 45px var(--main-color),
-                inset 0 0 55px var(--main-color),
-                inset 0 0 65px var(--main-color),
-                inset 0 0 75px var(--main-color),
-                inset 0 0 85px var(--main-color),
-                inset 0 0 95px var(--main-color),
-                inset 0 0 105px var(--main-color);
   }
 }
 @media (max-width:400px) {
