@@ -12,306 +12,195 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/User1.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 </head>
 <body>
-    <!-- https://github.com/Savitarn1/Portfolio.git  -->
-    <a href="#header" class="linkup">
-        <p class="arrow-up"><i class="fa-solid fa-arrow-up"></i></p>
-        <p class="arrow-up"><i class="fa-solid fa-arrow-up"></i></p>
-    </a>
-    <section id="header" class="backwhite">
-        <nav class="navbar">
-            <img src="images/logo.png"  alt="DC" class="logo">
-            <ul class="ul">
-                <li class="li"><a href="#about" class="link">About me</a></li>
-                <li class="li"><a href="#about" class="link">Skills</a></li>
-                <li class="li"><a href="#portfolio" class="link">Portfolio</a></li>
-                <li class="li"><a href="#resume" class="link">Resume</a></li>
-                <li class="li"><a href="#contacts" class="link">Contacts</a></li>
-                <button class="day">
-                    <div class="c1">
-                        <i class="icon fa-regular fa-sun"></i>
-                        <i class="icon fa-regular fa-moon noim"></i>
-                    </div>
-                </button>
-            </ul>
-            <ul class="sidebar">
-                <div class="navbox">
-                    <li onclick=hideSidebar() class="x"><i class="fa-solid fa-x"></i></li>
-                    <button class="day day1">
-                        <div class="c1 c2">
-                            <i class="icon fa-regular fa-sun sun"></i>
-                            <i class="icon fa-regular fa-moon moon noim"></i>
-                        </div>
-                    </button>
-                </div>
-                <li class="li"><a href="#about" class="link">About me</a></li>
-                <li class="li"><a href="#Skills" class="link">Skills</a></li>
-                <li class="li"><a href="#portfolio" class="link">Portfolio</a></li>
-                <li class="li"><a href="#resume" class="link">Resume</a></li>
-                <li class="li"><a href="#contacts" class="link">Contacts</a></li>
-                
-            </ul>
-            <span class="bar">
-                <i  onclick=showSidebar() class="fa-solid fa-bars"></i>
-            </span>
-        </nav>
-        <h1 class="h1">Dalerbek Artikmuratov</h1>
-        <p class="p">I like coding and learn all computer's secrets</p>
-        <div class="imgbox">
-            <div class="ring"></div>
-            <img src="images/User.png" alt="User" class="user">
+  <header>
+    <a href="#home" class="logo">Dalerbek <span>Artikmuratov</span></a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#education">Education</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <select onchange="selectColor()" class="btn color">
+        <option value="colors">Colors</option>
+        <option value="aqua">Aqua</option>
+        <option value="tulip">Tulip tree</option>
+        <option value="blood">Blood</option>
+        <option value="dodger">Dodger</option>
+        <option value="gold">Gold</option>
+        <option value="lime">Lime</option>
+      </select>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi , It's <span>Dalerbek</span></h1>
+      <h3 class="text-animation">I'm a <span></span></h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Molestiae minima unde rerum ratione ea repellendus, eveniet doloremque vero sapiente ab reiciendis ex perspiciatis debitis. Minus.</p>
+
+      <div class="social-icons">
+        <a href="https:instagram.com/dalerbekartikmuratov" target="_blank"><i class='bx bxl-instagram-alt bx-tada' ></i></a>
+        <a href="https://t.me/dalerbek_uzcoder_7734" target="_blank"><i class='bx bxl-telegram bx-tada' ></i></a>
+        <a href="https://github.com/Savitarn1/" target="_blank"><i class='bx bxl-github bx-tada' ></i></a>
+        <a href="mailto:miyuratatsu@gmail.com" target="_blank"><i class='bx bx-envelope bx-tada' ></i></a>
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn">Hire</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+
+    </div>
+    <div class="home-img">
+      <img src="user.png" alt="">
+    </div>
+  </section>
+
+  <section class="education" id="education">
+    <h2 class="heading">Education</h2>
+
+    <div class="timeline-items">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+          <div class="timeline-date">2012-2023</div>
+          <div class="timeline-content">
+            <h3>High School</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aspernatur, voluptas debitis excepturi autem blanditiis.</p>
+          </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h3>University</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aspernatur, voluptas debitis excepturi autem blanditiis.</p>
+          </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h3>IT Park</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aspernatur, voluptas debitis excepturi autem blanditiis.</p>
+          </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <h3>Job 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aspernatur, voluptas debitis excepturi autem blanditiis.</p>
+          </div>
         </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="middle">
-        <section id="about" class="backdodge">
-            <h2 class="h2">Hello , I'm <span class="orange">Dalerbek Artikmuratov</span> . Nice to meet you.</h2>
-            <p class="p1">I like <span class="red">front-end</span> development. For many months I have been learning different web technologies and practicing them by creating different templates and tasks for myself. I always try to create <span class="red">different</span> and <span class="red">attractive</span> design templates and also coding their contents. I really like coding, designing web templates and trying great <span class="red">web pages</span>, animations, effects and others like that.</p>
-        </section>
-        <section class="cards" id="Skills">
-            <div class="card">
-                <div class="">
-                    <i class="skill-icon fa-solid fa-laptop-code"></i>
-                </div>
-                <h3 class="h3">Front-End / Back-End Development</h3>
-                <p class="attractive">I am highly interested in working on front-end and creating really attractive pages.</p>
-                <div class="listbox">
-                    <ul class="ul1">
-                        <li class="li1">
-                            <i class="fa-brands fa-html5"></i>
-                            <span>HTML</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-brands fa-css3"></i>
-                            <span>CSS</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-brands fa-js"></i>
-                            <span>JavaScript</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-brands fa-sass"></i>
-                            <span>Sass</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-brands fa-python"></i>
-                            <span>Python</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-brands fa-git-alt"></i>
-                            <span>Git</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <i class="skill-icon fa-solid fa-laptop-code"></i>
-                </div>
-                <h3 class="h3">Learner</h3>
-                <p class="attractive">I always want to learn what I need to know and try to practice. Knowledge is power. </p>
-                <div class="listbox">
-                    <ul class="ul1">
-                        <li class="li1">
-                            <i class="fa-brands fa-bootstrap"></i>
-                            <span>Bootstrap</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-brands fa-linux"></i>
-                            <span>Linux</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-solid fa-database"></i>
-                            <span>SQL</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-brands fa-bootstrap"></i>
-                            <span>Bootstrap</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-brands fa-linux"></i>
-                            <span>Linux</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-solid fa-database"></i>
-                            <span>SQL</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <i class="skill-icon fa-solid fa-language"></i>
-                </div>
-                <h3 class="h3">Languages</h3>
-                <p class="attractive">I am good at foreign languages, they are very interesting and important in my opinion</p>
-                <div class="listbox">
-                    <ul class="ul1">
-                        <li class="li1">
-                            <i class="fa-solid fa-earth-asia"></i>
-                            <span>Uzbek</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-solid fa-earth-america"></i>
-                            <span>English</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-solid fa-earth-europe"></i>
-                            <span>Russian</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-solid fa-earth-asia"></i>
-                            <span>Uzbek</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-solid fa-earth-america"></i>
-                            <span>English</span>
-                        </li>
-                        <li class="li1">
-                            <i class="fa-solid fa-earth-europe"></i>
-                            <span>Russian</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </section>
+  <section class="services" id="services">
+    <h2 class="heading">Services</h2>
 
-    <section id="portfolio">
-        <!--  https://savitarn1.github.io/Positivus2/ -->
-        <!-- https://savitarn1.github.io/Savitar-sFigma/ -->
-        <!-- https://savitarn1.github.io/Default-Youtube/ -->
-        <!-- https://savitarn1.github.io/Artemis-v.2/General%20Page.html -->
-        <!-- https://savitarn1.github.io/Liverpooll/ -->
-        <h2 class="works">My Works</h2>
-        <div class="boxs">
-            <div class="box">
-                <div class="texts">
-                    <div class="project">
-                        <p class="large">Artemis Platform</p>
-                        <p class="about">Artemis is a HEMIS-based project designed to assess university students.</p>
-                    </div>
-                    <ul class="ul2">
-                        <p class="li2 large">What I used:</p>
-                        <li class="li2">HTML</li>
-                        <li class="li2">CSS</li>
-                        <li class="li2">SASS</li>
-                        <li class="li2">JAVASCRIPT</li>
-                        <a href="https://savitarn1.github.io/Artemis-v.2/General%20Page.html" class="li2 link1">Artemis</a>
-                    </ul>
-                </div>
-            </div>
-            <div class="box">
-                <div class="texts">
-                    <div class="project">
-                        <p class="large">Demo Youtube</p>
-                        <p class="about">I chose the YOUTUBE platform for this purpose and prepared its web page.
-                    </p>
-                    </div>
-                    <ul class="ul2">
-                        <p class="li2 large">What I used:</p>
-                        <li class="li2">HTML</li>
-                        <li class="li2">CSS</li>
-                        <li class="li2">SASS</li>
-                        <li class="li2">JAVASCRIPT</li>
-                        <a href="https://savitarn1.github.io/Default-Youtube/" class="li2 link1">YouTube</a>
-                    </ul>
-                </div>
-            </div>
-            <div class="box">
-                <div class="texts">
-                    <div class="project">
-                        <p class="large">Positivus</p>
-                    <p class="about little">An animated website specially made on the theme of Positivus</p>
-                    </div>
-                    <ul class="ul2">
-                        <p class="li2 large">What I used:</p>
-                        <li class="li2">HTML</li>
-                        <li class="li2">CSS</li>
-                        <li class="li2">SASS</li>
-                        <li class="li2">JAVASCRIPT</li>
-                        <a href="https://savitarn1.github.io/Positivus2/" class="li2 link1">Positivus</a>
-                    </ul>
-                </div>
-            </div>
-            <div class="box">
-                <div class="texts">
-                    <div class="project">
-                        <p class="large">Flowers</p>
-                    <p class="about little">A website based on the theme of Figma mockup in flowers</p>
-                    </div>
-                    <ul class="ul2">
-                        <p class="li2 large">What I used:</p>
-                        <li class="li2">HTML</li>
-                        <li class="li2">CSS</li>
-                        <li class="li2">SASS</li>
-                        <li class="li2">JAVASCRIPT</li>
-                        <a href="https://savitarn1.github.io/Savitar-sFigma/" class="li2 link1">Flowers</a>
-                    </ul>
-                </div>
-            </div>
-            <div class="box">
-                <div class="texts">
-                    <div class="project">
-                        <p class="large">Liverpool</p>
-                        <p class="about little">A web page based on the website of the Liverpool football team</p>
-                    </div>
-                    <ul class="ul2">
-                        <p class="li2 large">What I used:</p>
-                        <li class="li2">HTML</li>
-                        <li class="li2">CSS</li>
-                        <li class="li2">SASS</li>
-                        <li class="li2">JAVASCRIPT</li>
-                        <a href="https://savitarn1.github.io/Liverpooll/" class="li2 link1">Liverpool</a>
-                    </ul>
-                </div>
-            </div>
-            <div class="box">
-                <div class="texts">
-                    <div class="project">
-                        <p class="large">Sample Portfolio</p>
-                        <p class="about little">I made my current Portfolio web page inspired by this website</p>
-                    </div>
-                    <ul class="ul2">
-                        <p class="li2 large">What I used:</p>
-                        <li class="li2">HTML</li>
-                        <li class="li2">CSS</li>
-                        <li class="li2">SASS</li>
-                        <li class="li2">JAVASCRIPT</li>
-                        <a href="https://chingizpro.github.io/portfolio/" class="li2 link1">Portfolio</a>
-                    </ul>
-                </div>
-            </div>
+    <div class="services-container">
+      <div class="service-box">
+        <div class="service-info">
+          <h4>Frontend Development</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum id temporibus impedit illo nam. Totam accusantium porro cum sed, minima rem asperiores esse quia? Dolores eius quidem rerum provident.</p>
         </div>
-    </section>
+      </div>
 
-    <section id="resume">
-        <h2 class="short-resume">Short Resume</h2>
-        <p class="experience">Learning experience</p>
-        <ul class="ul3">
-            <li class="li2"> <span class="dot"></span>Junior level in Front-end in website development</li>
-            <li class="li2"> <span class="dot"></span>Also Junior level in Backend in web site preparation</li>
-            <li class="li2"> <span class="dot"></span>He has the necessary knowledge in the preparation of various websites</li>
-            <li class="li2"> <span class="dot"></span>Also has basic knowledge of CyberSecurity</li>
-        </ul>
-        <a href="#" class="resumebtn">Full resume</a>
-    </section>
-
-    <section id="contacts">
-        <img src="images/User1.png" alt="User" class="logo1">
-        <span class="spn">Learning, practicing, living at a time.</span>
-        <div class="lastlink">
-            <ul class="linkbox">
-                <li class="link0"><a href="https://github.com/Savitarn1/" class="a"><i class="fa-brands fa-github"></i></a></i></li>
-                <li class="link0"><a href="https://t.me/dalerbek_uzcoder" class="a"><i class="fa-brands fa-telegram"></i></a></i></li>
-                <li class="link0"><a href="https://www.instagram.com/dalerbekartikmuratov/" class="a"><i class="fa-brands fa-instagram"></i></a></i></li>
-                <li class="link0"><a href="https://www.facebook.com/dalerbekartikmuratov/" class="a"><i class="fa-brands fa-facebook"></i></a></i></li>
-                <li class="link0"><a href="https://gmail.com/miyuratatsu" class="a"><i class="fa-regular fa-envelope"></i></a></i></li>
-            </ul>
+      <div class="service-box">
+        <div class="service-info">
+          <h4>Backend Development</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum id temporibus impedit illo nam. Totam accusantium porro cum sed, minima rem asperiores esse quia? Dolores eius quidem rerum provident.</p>
         </div>
-    </section>
+      </div> 
 
-    <script src="main.js"></script>
+      <div class="service-box">
+        <div class="service-info">
+          <h4>Mobile Development</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum id temporibus impedit illo nam. Totam accusantium porro cum sed, minima rem asperiores esse quia? Dolores eius quidem rerum provident.</p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-info">
+          <h4>Cyber Hunter</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum id temporibus impedit illo nam. Totam accusantium porro cum sed, minima rem asperiores esse quia? Dolores eius quidem rerum provident.</p>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="">
+      <div class="input-group">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Phone Number">
+          <input type="text" placeholder="Subject">
+        </div>
+      </div>
+
+      <div class="input-group-2">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="#"><i class='bx bxl-instagram-alt bx-tada' ></i></a>
+        <a href="#"><i class='bx bxl-telegram bx-tada' ></i></a>
+        <a href="#"><i class='bx bxl-github bx-tada' ></i></a>
+        <a href="#"><i class='bx bx-envelope bx-tada' ></i></a>
+    </div>
+
+    <ul class="list">
+      <li>
+        <a href="#">FAQ</a>
+      </li>
+      
+      <li>
+        <a href="#">Services</a>
+      </li>
+      
+      <li>
+        <a href="#">About Me</a>
+      </li>
+      
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      
+      <li>
+        <a href="#">FAQ</a>
+      </li>
+    </ul>
+    <p class="copyright">
+      &copy; <span>Dalerbek Artikmuratov | All Right Reserved</span>
+    </p>
+  </footer>
+
+  <section class="loader">
+    <div class="part1">
+      <div class="pupil-main"></div>
+      <div class="pupil-sub"><div id="pupil"></div></div>
+      <div class="pupil-sub"><div id="pupil"></div></div>
+      <div class="pupil-sub"><div id="pupil"></div></div>
+    </div>
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
