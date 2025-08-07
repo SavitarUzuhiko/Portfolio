@@ -253,11 +253,11 @@ span{
   }
   61%,
   80%{
-    content: "Cybersucerity Learner";
+    content: "Cybersecurity Learner";
   }
   81%,
   100%{
-    content: "Graphic Design Learner";
+    content: "UI / UX Learner";
   }
 }
 @keyframes typing {
